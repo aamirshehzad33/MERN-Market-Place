@@ -1,60 +1,134 @@
-# MERN Marketplace 2.0
-- *Looking for the first edition code? [Check here](https://github.com/shamahoque/mern-marketplace/tree/master)*
+## MERN Marketplace
 
-An online marketplace application with seller accounts, product search and suggestions, shopping cart, order management, payment processing with Stripe, and live auction with Socket.io - developed using React, Node, Express and MongoDB. 
+
+An advanced MERN stack online marketplace application with seller accounts, product search, shopping cart, order management, payment processing, and live auction support using Socket.io.
+
+
+## Overview
+
+
+MERN Marketplace  is an e-commerce platform built using MongoDB, Express, React, and Node.js (MERN stack). This application allows users to buy and sell products, manage orders, process payments via Stripe, and participate in real-time auctions.
+
+
+## Features
+
+### 🛒 User Features:
+
+🔐 User authentication (Register/Login)
+
+🏪 Browse and search products
+
+🛍️ Add to cart and checkout
+
+💳 Secure payment processing with Stripe
+
+⭐ Rate and review products
+
+📢 Receive notifications on orders
+
+🕵️‍♂️ Search for products by category and keyword
+
+🔔 Real-time updates on auctions
+
+### 🛍️ Seller Features:
+
+🏪 Create and manage a seller account
+
+📦 Add, edit, and delete products
+
+📊 View sales and order reports
+
+📢 Promote products with featured listings
+
+🛎️ Receive notifications on new orders
+
+🔥 Live Auction Features:
+
+📡 Real-time bidding system using Socket.io
+
+⏳ Countdown timers for auction expiration
+
+🏆 Highest bidder wins and gets notified
+
+### 🛠️ Admin Features:
+
+🚀 Manage users and sellers
+
+🏪 Approve or reject product listings
+
+📦 Monitor marketplace activities
+
+## Tech Stack
+
+### Frontend:
+
+React.js
+
+Redux Toolkit
+
+Material-UI
+
+Axios
+
+React Router
+
+### Backend:
+
+Node.js
+
+Express.js
+
+MongoDB (Mongo Atlas)
+
+JWT Authentication
+
+bcrypt for password hashing
+
+Payment & Real-Time Updates:
+
+Stripe API (Payment processing)
+
+Socket.io (Live auctions & real-time updates)
+
+## ScreenShots
 
 <img align="center" src="https://s3.amazonaws.com/mernbook/git+/marketplace.png" width="56%"> <img align="center" src="https://mernbook.s3.amazonaws.com/git+/marketplace-bidding.png" width="42%">
 
-### [Live Demo](http://marketplace2.mernbook.com/ "MERN Marketplace")
 
-#### What you need to run this code
-1. Node (13.12.0)
-2. NPM (6.14.4) or Yarn (1.22.4)
-3. MongoDB (4.2.0)
-4. Stripe account with test data
+## Installation & Setup
 
-####  How to run this code
-1. Make sure MongoDB is running on your system 
-2. Clone this repository
-3. Update config/config.js with your test values for Stripe API keys and Stripe Connect Client ID 
-4. Open command line in the cloned folder,
-   - To install dependencies, run ```  npm install  ``` or ``` yarn ```
-   - To run the application for development, run ```  npm run development  ``` or ``` yarn development ```
-5. Open [localhost:3000](http://localhost:3000/) in the browser
----- 
-### More applications built using this stack
+ Clone this repository
 
-* [MERN Skeleton](https://github.com/shamahoque/mern-social/tree/second-edition)
-* [MERN Social](https://github.com/shamahoque/mern-social/tree/second-edition)
-* [MERN Classroom](https://github.com/shamahoque/mern-classroom)
-* [MERN Expense Tracker](https://github.com/shamahoque/mern-expense-tracker)
-* [MERN Mediastream](https://github.com/shamahoque/mern-mediastream/tree/second-edition)
-* [MERN VR Game](https://github.com/shamahoque/mern-vrgame/tree/second-edition)
+ git clone https://github.com/your-username/mern-marketplace.git
+cd mern-marketplace
 
-Learn more at [mernbook.com](http://www.mernbook.com/)
+### Backend Setup
 
-----
-## Get the book
-#### [Full-Stack React Projects - Second Edition](https://www.packtpub.com/web-development/full-stack-react-projects-second-edition)
-*Learn MERN stack development by building modern web apps using MongoDB, Express, React, and Node.js*
+cd server
+npm install
 
-<a href="https://www.packtpub.com/web-development/full-stack-react-projects-second-edition"><img src="https://mernbook.s3.amazonaws.com/git+/Book_2Ed.jpg" align="center" width="400" alt="Full-Stack React Projects"></a>
+### Create a .env file in the server directory and add:
+MONGO_URI=your-mongodb-url
+STRIPE_SECRET_KEY=your-stripe-secret
+JWT_SECRET=your-jwt-secret
 
-React combined with industry-tested, server-side technologies, such as Node, Express, and MongoDB, enables you to develop and deploy robust real-world full-stack web apps. This updated second edition focuses on the latest versions and conventions of the technologies in this stack, along with their new features such as Hooks in React and async/await in JavaScript. The book also explores advanced topics such as implementing real-time bidding, a web-based classroom app, and data visualization in an expense tracking app.
+### Start the backend:
+npm start
 
-Full-Stack React Projects will take you through the process of preparing the development environment for MERN stack-based web development, creating a basic skeleton app, and extending it to build six different web apps. You'll build apps for social media, classrooms, media streaming, online marketplaces with real-time bidding, and web-based games with virtual reality features. Throughout the book, you'll learn how MERN stack web development works, extend its capabilities for complex features, and gain actionable insights into creating MERN-based apps, along with exploring industry best practices to meet the ever-increasing demands of the real world.
+### Frontend Setup
 
-Things you'll learn in this book:
+cd client
+npm install
+Configure API base URL in /client/src/config.js.
 
-- Extend a MERN-based application to build a variety of applications
-- Add real-time communication capabilities with Socket.IO
-- Implement data visualization features for React applications using Victory
-- Develop media streaming applications using MongoDB GridFS
-- Improve SEO for your MERN apps by implementing server-side rendering with data
-- Implement user authentication and authorization using JSON web tokens
-- Set up and use React 360 to develop user interfaces with VR capabilities
-- Make your MERN stack applications reliable and scalable with industry best practices
+### Start the frontend
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1839215410) today!
+npm start
 
----
+## License
+
+This project is open-source and available under the MIT License.
+
+🚀 Happy Coding & Selling!
+
+
