@@ -42,7 +42,7 @@ MERN Marketplace  is an e-commerce platform built using MongoDB, Express, React,
 
 🛎️ Receive notifications on new orders
 
-🔥 Live Auction Features:
+### 🔥 Live Auction Features:
 
 📡 Real-time bidding system using Socket.io
 
@@ -84,7 +84,7 @@ JWT Authentication
 
 bcrypt for password hashing
 
-Payment & Real-Time Updates:
+### Payment & Real-Time Updates:
 
 Stripe API (Payment processing)
 
